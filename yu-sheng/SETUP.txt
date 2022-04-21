@@ -1,0 +1,49 @@
+messages text:
+Image size cannot exceed 300kb
+An unknown error occurred, account creation failed, please try again later
+The image extension only supports jpg, png, jpeg, gif, jfif and webp
+Password needs to be at least 10 characters, no more than 255 characters, no spaces, and at least 1 uppercase character, number and symbol
+The account id must have at least 8 characters, no spaces and no more than 30 characters
+The required information was not included, the operation failed, please try again later
+Sorry, were just one step away, there was a problem verifying, please try again later
+Confirm password does not match the password you created
+first name or last name cannot exceed 30 characters
+Only English letters are allowed in the password
+Account id requires at least 10 characters and no spaces and no more than 20 characters
+ 
+
+regaxp:
+@^[\s\w\d\x21-\x2f\x3a-\x40\x5b-\x60\x7b-\x7e]*$@
+
+mail messages sign up:
+<div style="width: 100%; padding: 10px; box-sizing: border-box;">
+      <header style="padding-bottom: .3rem; border-bottom: .1rem solid #d6d6d6; display: flex; align-items: center; justify-content: center;">
+          <img src="cid:various-logo" style="width: 55px; height: 55px; object-fit: cover; border-radius: 50%;
+          margin-right: 0; margin-left: 0; margin-bottom: 0; margin-top: 0;" />
+          <h1 style="position: relative; margin-top: 10px; margin-bottom: 0;">Various</h1>
+      </header>
+      <div style="margin-top: .3rem;">
+          <p style="font-size: 1.1rem; margin-bottom: 0;">Hi, '.$first_name.' '.$last_name.', thank you for registering various, in order to make sure the email is yours so we need to verify</p>
+          <p style="font-size: 1.1rem; margin-bottom: 0;">Your verify code is: <strong>'.$verify_code.'</strong></p>
+      </div><br/>
+      <div style="background: #f5f4f4; padding: 10px; border-radius: 4px;">
+      <p style="font-size: 1.05rem; margin-top: 0; margin-bottom: 0;">Please do not disclose the verify code to others</p>
+    </div>
+    </div>
+
+mail messages forgot password:
+<div style="width: 100%; padding: 10px; box-sizing: border-box;">
+                            <header style="padding-bottom: .3rem; border-bottom: .1rem solid #d6d6d6; display: flex; align-items: center; justify-content: center;">
+                                <img src="cid:various_logo" style="width: 55px; height: 55px; object-fit: cover; border-radius: 50%;
+                                margin-right: 0; margin-left: 0; margin-bottom: 0; margin-top: 0;" />
+                                <h1 style="position: relative; margin-top: 10px; margin-bottom: 0;">Various</h1>
+                            </header>
+                            <div style="margin-top: .3rem;">
+                                <h2>Password help</h2>
+                                <p style="font-size: 1.1rem; margin-bottom: 0;">Hi, users, In order to ensure that '.$email.' is your email address so we need to verify, after verification you will be given the opportunity to reset your password</p>
+                                <p style="font-size: 1.1rem; margin-bottom: 0;">Your verify code is: <strong>'.$verify_code.'</strong></p>
+                            </div><br/>
+                            <div style="background: #f5f4f4; padding: 10px; border-radius: 4px;">
+                                <p style="font-size: 1.05rem; margin-top: 0; margin-bottom: 0;">Please do not disclose the verify code to others</p>
+                            </div>
+                        </div>
